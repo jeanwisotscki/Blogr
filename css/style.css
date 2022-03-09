@@ -41,6 +41,10 @@ font-family: 'Overpass', sans-serif;
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .btn-solid {
   width: 120px;
   height: 40px;
@@ -151,6 +155,7 @@ nav a {
 
 .header-content p {
   font-size: 1.1rem;
+  opacity: 0.7;
   margin-bottom: 40px;
 }
 
@@ -160,9 +165,8 @@ nav a {
   font-family: "Overpass";
   padding-top: 140px;
   background: url("../images/illustration-editor-desktop.svg") no-repeat;
-  background-size: 55%;
-  background-position: 136% -80%;
-  border: 2px solid yellow;
+  background-size: 60%;
+  background-position: 140% 60%;
 }
 
 .main-content .h1 {
@@ -172,22 +176,72 @@ nav a {
   margin-bottom: 90px;
 }
 
-.flex {
-  display: flex;
-}
-
 .texts-presentation {
   max-width: 100%;
   width: 50%;
   margin-bottom: 150px;
 }
 
-.main-img {
-  max-width: 150%;
-  width: 50%;
+.text-container .title {
+  color: var(--very-dark-blue);
+  font-size: 1.6rem;
+  margin-bottom: 30px;
 }
 
-.main-img img {
+.text-container .content {
+  color: var(--very-dark-grayish-blue);
+  line-height: 25px;
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* Section: State of the Art
+  -very-dark-gray-blue: hsl(237, 17%, 21%);
+  -very-dark-desaturated-blue: hsl(237, 23%, 32%);
+******************************/
+.art-state {
+  background-image: linear-gradient(
+      140deg,
+      hsla(237, 23%, 32%, 0.9),
+      hsla(237, 17%, 21%, 1)
+    ),
+    url("../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -40% 81%;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  font-family: "Overpass";
+}
+
+.art-container {
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smartphones {
+  width: 40%;
+  border: 1px solid red;
+}
+.smartphones img {
   display: block;
-  max-width: 150%;
+  max-width: 100%;
+}
+
+.art-text {
+  width: 50%;
+  margin: 100px 0;
+}
+.art-text .title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.art-text .content {
+  color: var(--grayish-blue);
+  line-height: 25px;
 }

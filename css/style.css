@@ -37,7 +37,7 @@ font-family: 'Overpass', sans-serif;
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -73,8 +73,14 @@ font-family: 'Overpass', sans-serif;
 **********************/
 header {
   font-family: "Ubuntu", sans-serif;
-  background: tomato url(../images/bg-pattern-intro-desktop.svg) no-repeat
-    center center;
+  background-image: linear-gradient(
+      140deg,
+      hsla(13, 100%, 72%, 0.9),
+      hsla(353, 100%, 62%, 0.98)
+    ),
+    url("../images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 25% 51%;
   padding-top: 50px;
   padding-bottom: 140px;
   border-bottom-left-radius: 80px;
@@ -82,6 +88,12 @@ header {
 
 .nav {
   display: flex;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  margin-right: 50px;
 }
 
 nav {
@@ -95,7 +107,8 @@ nav a {
   display: block;
   font-weight: 700;
   color: var(--white);
-  padding: 10px 20px;
+  opacity: 0.7;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
@@ -120,6 +133,7 @@ nav a {
   background-color: var(--white);
   border-radius: 20px;
   color: var(--light-red);
+  opacity: 1;
   padding: 10px 30px;
 }
 

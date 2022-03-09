@@ -28,3 +28,114 @@ font-family: 'Overpass', sans-serif;
   -very-dark-gray-blue: hsl(237, 17%, 21%);
   -very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.btn-solid {
+  width: 120px;
+  height: 40px;
+  color: var(--light-red);
+  border: none;
+  font-family: "Ubuntu";
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--white);
+  border-radius: 25px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.btn-hollow {
+  width: 120px;
+  height: 40px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-family: "Ubuntu";
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 25px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+/* Header & Nav
+**********************/
+header {
+  font-family: "Ubuntu", sans-serif;
+  background: tomato url(../images/bg-pattern-intro-desktop.svg) no-repeat
+    center center;
+  padding-top: 50px;
+  padding-bottom: 140px;
+  border-bottom-left-radius: 80px;
+}
+
+.nav {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  font-weight: 700;
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu li a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+  background: url(../images/icon-arrow-light.svg) no-repeat center center;
+  margin-left: 7px;
+}
+
+.menu-btns {
+  display: flex;
+  list-style: none;
+}
+.btn-sign-up a {
+  background-color: var(--white);
+  border-radius: 20px;
+  color: var(--light-red);
+  padding: 10px 30px;
+}
+
+.header-content {
+  font-family: "Overpass", sans-serif;
+  color: var(--white);
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 3.2rem;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}

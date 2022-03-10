@@ -216,7 +216,7 @@ nav a {
 }
 
 .art-container {
-  border: 1px solid orange;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,16 +224,16 @@ nav a {
 
 .smartphones {
   width: 40%;
-  border: 1px solid red;
 }
 .smartphones img {
-  display: block;
-  max-width: 100%;
+  position: absolute;
+  top: -55px;
+  width: 45%;
 }
 
 .art-text {
   width: 50%;
-  margin: 100px 0;
+  margin: 80px 0;
 }
 .art-text .title {
   font-size: 2rem;

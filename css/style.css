@@ -245,3 +245,19 @@ nav a {
   color: var(--grayish-blue);
   line-height: 25px;
 }
+
+/* Final Section
+*******************************/
+.final {
+  display: flex;
+  padding: 80px 0;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.img-container img {
+  max-width: 100%;
+  display: block;
+}

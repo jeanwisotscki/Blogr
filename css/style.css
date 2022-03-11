@@ -261,3 +261,15 @@ nav a {
   max-width: 100%;
   display: block;
 }
+
+/* Footer
+*********************/
+footer {
+  background: var(--very-dark-black-blue);
+  border-top-right-radius: 80px;
+  padding: 40px 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}

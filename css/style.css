@@ -35,6 +35,10 @@ font-family: 'Overpass', sans-serif;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Overpass";
+}
+
 .container {
   width: 100%;
   max-width: 980px;
@@ -162,7 +166,6 @@ nav a {
 /* Main Content
 ********************/
 .main-content {
-  font-family: "Overpass";
   padding-top: 140px;
   background: url("../images/illustration-editor-desktop.svg") no-repeat;
   background-size: 60%;
@@ -212,7 +215,6 @@ nav a {
   background-position: -40% 81%;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
-  font-family: "Overpass";
 }
 
 .art-container {
@@ -266,7 +268,6 @@ nav a {
 *********************/
 footer {
   background: var(--very-dark-black-blue);
-  font-family: "Overpass";
   border-top-right-radius: 80px;
   padding: 80px 20px 40px 20px;
 }

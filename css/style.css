@@ -266,10 +266,32 @@ nav a {
 *********************/
 footer {
   background: var(--very-dark-black-blue);
+  font-family: "Overpass";
   border-top-right-radius: 80px;
-  padding: 40px 0;
+  padding: 80px 20px 40px 20px;
 }
 .footer {
   display: flex;
   justify-content: space-between;
+}
+
+.list {
+  list-style: none;
+}
+
+.list p {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.list a {
+  display: block;
+  color: var(--grayish-blue);
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.list a:hover {
+  text-decoration: underline;
 }

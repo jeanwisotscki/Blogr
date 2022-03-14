@@ -180,6 +180,10 @@ nav a {
   margin-bottom: 90px;
 }
 
+.main {
+  display: flex;
+}
+
 .texts-presentation {
   max-width: 100%;
   width: 50%;

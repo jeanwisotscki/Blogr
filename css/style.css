@@ -135,6 +135,22 @@ nav a {
   margin-left: 7px;
 }
 
+.dropdown {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background: #ccc;
+  border: 1px solid black;
+}
+.dropdown li a::after {
+  content: "";
+  background: none;
+}
+
+.menu li:hover .dropdown {
+  display: block;
+}
+
 .nav-btns {
   display: flex;
   list-style: none;

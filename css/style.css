@@ -29,6 +29,8 @@ font-family: 'Overpass', sans-serif;
   -very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
+/* Formatações gerais
+******************************/
 * {
   margin: 0;
   padding: 0;
@@ -45,36 +47,36 @@ body {
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-}
-
-.btn-solid {
-  width: 120px;
+.btn {
+  width: 130px;
   height: 40px;
-  color: var(--light-red);
+  font-family: "Ubuntu";
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 25px;
   border: none;
-  font-family: "Ubuntu";
-  font-size: 0.9rem;
-  font-weight: 700;
-  background-color: var(--white);
-  border-radius: 25px;
-  margin: 0 10px 0 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.btn-hollow {
-  width: 120px;
-  height: 40px;
+.btn-primary {
+  color: var(--light-red);
+  background-color: var(--white);
+}
+.btn-primary:hover {
   color: var(--white);
-  border: 1px solid var(--white);
-  font-family: "Ubuntu";
-  font-size: 0.9rem;
-  font-weight: 700;
   background-color: transparent;
-  border-radius: 25px;
-  margin: 0 10px 0 0;
-  cursor: pointer;
+  border: 1px solid;
+}
+
+.btn-secondary {
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+.btn-secondary:hover {
+  color: var(--light-red);
+  background-color: var(--white);
 }
 
 /* Header & Nav
@@ -133,16 +135,15 @@ nav a {
   margin-left: 7px;
 }
 
-.menu-btns {
+.nav-btns {
   display: flex;
   list-style: none;
 }
-.btn-sign-up a {
-  background-color: var(--white);
-  border-radius: 20px;
-  color: var(--light-red);
+.nav-btns li a {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
   opacity: 1;
-  padding: 10px 30px;
 }
 
 .header-content {

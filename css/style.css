@@ -39,6 +39,10 @@ body {
   font-family: var(--font2);
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   width: 138px;
   height: 48px;
@@ -74,21 +78,22 @@ body {
 /* Header
 *************************/
 header {
-  background: linear-gradient(140deg, var(--very-light-red), var(--light-red));
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat center
+      center,
+    linear-gradient(140deg, hsla(13, 100%, 72%, 0.9), hsla(353, 100%, 62%, 0.9));
   padding-bottom: 9.7rem;
   border-bottom-left-radius: 100px;
 }
 
 .hero {
-  height: 26.5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .__logo {
-  width: 5rem;
+  width: 6rem;
 }
 .__img-logo {
   display: block;

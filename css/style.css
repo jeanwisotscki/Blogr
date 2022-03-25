@@ -78,9 +78,8 @@ button {
 /* Header
 *************************/
 header {
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat center
-      center,
-    linear-gradient(140deg, hsla(13, 100%, 72%, 0.9), hsla(353, 100%, 62%, 0.9));
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat 35% 35%,
+    linear-gradient(140deg, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
   padding-bottom: 9.7rem;
   border-bottom-left-radius: 100px;
 }

@@ -125,7 +125,7 @@ header {
 }
 
 .title {
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 2.7rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -170,4 +170,10 @@ header {
   color: var(--very-dark-grayish-blue);
   padding: 0 10px;
   margin-bottom: 40px;
+}
+
+/* Section: State of the Art Infrastructure
+**********************************************/
+.__sect-2 {
+  border: 1px solid red;
 }

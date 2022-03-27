@@ -175,5 +175,13 @@ header {
 /* Section: State of the Art Infrastructure
 **********************************************/
 .__sect-2 {
+  background: url("../images/bg-pattern-circles.svg") no-repeat center -250px,
+    linear-gradient(
+      140deg,
+      hsla(237, 17%, 21%, 0.99),
+      hsla(237, 23%, 32%, 0.99)
+    );
+  background-size: 150%;
+  border-top-right-radius: 80px;
   border: 1px solid red;
 }

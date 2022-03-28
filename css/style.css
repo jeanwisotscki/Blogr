@@ -175,24 +175,22 @@ header {
 /* Section: State of the Art Infrastructure
 **********************************************/
 .__sect-2 {
-  background: url("../images/bg-pattern-circles.svg") no-repeat center -245px,
-    linear-gradient(
-      140deg,
-      hsla(237, 17%, 21%, 0.99),
-      hsla(237, 23%, 32%, 0.99)
-    );
-  background-size: 160%;
+  position: relative;
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 80px;
+}
+.__sect-2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 22%;
+  bottom: 0;
+  background-color: var(--very-dark-blue);
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
-  position: relative;
-  margin-top: 180px;
-  text-align: center;
-  padding: 200px 0 60px 0;
-}
-
-.img-container {
-  position: absolute;
-  top: -180px;
+  z-index: -1;
 }
 
 .main-content h1 {

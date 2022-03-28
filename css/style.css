@@ -176,6 +176,7 @@ header {
 **********************************************/
 .__sect-2 {
   position: relative;
+
   color: var(--white);
   text-align: center;
   padding-bottom: 80px;
@@ -187,7 +188,8 @@ header {
   position: absolute;
   top: 22%;
   bottom: 0;
-  background-color: var(--very-dark-blue);
+  background-image: url("../images/bg-pattern-circles.svg"),
+    linear-gradient(140deg, var(--very-dark-black-blue), var(--very-dark-blue));
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
   z-index: -1;

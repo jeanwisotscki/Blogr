@@ -198,6 +198,17 @@ header {
   border-bottom-left-radius: 80px;
   z-index: -1;
 }
+.img-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.circles-img {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
 
 .main-content h1 {
   color: var(--white);

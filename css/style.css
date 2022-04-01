@@ -191,34 +191,49 @@ header {
   bottom: 0;
   background-image: linear-gradient(
     140deg,
-    var(--very-dark-black-blue),
-    var(--very-dark-blue)
+    var(--very-dark-blue),
+    var(--very-dark-black-blue)
   );
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
   z-index: -1;
 }
+
 .img-container {
   width: 90%;
   margin: 0 auto;
 }
-.circles-img {
-  width: 100%;
+
+.circles{
   position: absolute;
-  top: 40px;
+  display: block;
+  width: 100%;
+  top: 22%;
+  bottom: 0;
+  background-image: url('../images/bg-pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-size: 95vh;
+  background-position: center -40vh;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
   z-index: -1;
-  overflow: hidden;
+}
+
+.main-content{
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .main-content h1 {
   color: var(--white);
   font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .main-content p {
   color: var(--grayish-blue);
   line-height: 26px;
-  padding: 20px 30px;
 }
 
 /* Section: powerful

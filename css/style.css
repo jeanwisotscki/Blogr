@@ -239,5 +239,7 @@ header {
 /* Section: powerful
 **********************************************/
 .__sect-3{
+  margin-top: 80px;
   text-align: center;
+  border: 1px solid red;
 }

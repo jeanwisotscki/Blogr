@@ -268,13 +268,31 @@ header {
   color: var(--white);
   text-align: center;
   border-top-right-radius: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .logo{
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 80px 0;
+}
+
+.list{
+  padding-bottom: 40px;
+  font-family: var(--font1);
+}
+
+.list p{
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.list li a{
+  display: block;
+  color: var(--grayish-blue);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 7px 0;
 }

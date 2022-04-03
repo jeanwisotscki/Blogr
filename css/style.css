@@ -75,7 +75,7 @@ img {
 
 .text-wrapper h1 {
   color: var(--very-dark-blue);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -185,7 +185,9 @@ header {
 
 .__sect-1 > h1 {
   color: var(--very-dark-blue);
-  margin-top: 80px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 

@@ -216,7 +216,6 @@ header {
 }
 
 .phones{
-  width: 92%;
   margin: 0 auto;
 }
 
@@ -253,7 +252,7 @@ header {
 }
 
 /* Section: powerful
-**********************************************/
+***********************/
 .__sect-3{
   margin-top: 80px;
   text-align: center;
@@ -293,4 +292,8 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   margin: 7px 0;
+}
+
+.list li a:hover{
+  text-decoration: underline;
 }

@@ -129,6 +129,10 @@ header {
   border-bottom-left-radius: 100px;
 }
 
+.nav{
+  display: none;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -181,9 +185,33 @@ header {
 *******************/
 @media only screen and (min-width: 845px) {
   header {
-    background: url("../images/bg-pattern-intro-desktop.svg") no-repeat center center,
+    background: url("../images/bg-pattern-intro-desktop.svg") no-repeat 40% 50%,
     linear-gradient(140deg, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
   }
+  .hero{
+    justify-content: start;
+  }
+  .__menu-mobile{
+    display: none;
+  }
+
+  .nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+  }
+
+  .menu{
+    display: flex;
+    
+  }
+  .menu ul li{
+    list-style: none;
+
+  }
+
 }
 
 /* Section: Designed for the future

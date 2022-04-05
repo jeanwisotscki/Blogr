@@ -191,6 +191,9 @@ header {
   .hero{
     justify-content: start;
   }
+  .__logo{
+    margin-right: 2rem;
+  }
   .__menu-mobile{
     display: none;
   }
@@ -207,7 +210,13 @@ header {
     display: flex;
   }
 
+  .menu ul:hover .menu ul li{
+    display: block;
+    
+  }
+
   .menu ul p{
+    color: var(--white);
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -227,7 +236,6 @@ header {
     display: none;
     list-style: none;
   }
-
 }
 
 /* Section: Designed for the future

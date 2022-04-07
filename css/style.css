@@ -211,7 +211,6 @@ header {
     align-items: center;
     position: relative;
     list-style: none;
-
   }
 
   .menu > li{
@@ -220,6 +219,7 @@ header {
   }
 
   .dropdown{
+    background-color: #eee;
     display: block;
     position: absolute;
     list-style: none;

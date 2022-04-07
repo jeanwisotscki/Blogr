@@ -214,12 +214,14 @@ header {
   }
 
   .menu > li{
-    width: 120px;
+    width: 170px;
     text-align: center;
     border: 1px solid black;
+    margin-right: 5px;
   }
 
   .dropdown{
+    width: 170px;
     background-color: #eee;
     display: block;
     position: absolute;

@@ -184,6 +184,7 @@ header {
 /* Media queries
 *******************/
 @media only screen and (min-width: 845px) {
+
   header {
     background: url("../images/bg-pattern-intro-desktop.svg") no-repeat 40% 50%,
     linear-gradient(140deg, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
@@ -202,39 +203,27 @@ header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid red;
   }
 
   .menu{
     display: flex;
-  }
-
-  .menu ul:hover .menu ul li{
-    display: block;
-    
-  }
-
-  .menu ul p{
-    color: var(--white);
-    display: flex;
     align-items: center;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 1px solid red;
-  }
-  .menu ul p::after{
-    content: '';
-    height: 10px;
-    width: 10px;
-    margin-left: 10px;
-    background: url('../images/icon-arrow-light.svg') no-repeat center center;
+    position: relative;
+    list-style: none;
+
   }
 
-  .menu ul li{
-    display: none;
+  .menu > li{
+    border: 1px solid black;
+    margin: 0 40px;
+  }
+
+  .dropdown{
+    display: block;
+    position: absolute;
     list-style: none;
+    
   }
 }
 

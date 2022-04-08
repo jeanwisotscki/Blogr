@@ -214,25 +214,41 @@ header {
 
   [data-dropdown]{
     position: relative;
-    width: 170px;
-    text-align: center;
-    border: 1px solid black;
-    margin-right: 5px;
-    background-color: red;
+    width: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
   }
   [data-dropdown] .dropdown-menu{
     display: none;
   }
   [data-dropdown]:hover .dropdown-menu{
     display: block;
+    animation: show-up 0.3s ease;
+  }
+
+  @keyframes show-up{
+    from{
+      opacity: 0;
+      transform: translate3d(0,30px,0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
   }
 
   .dropdown-menu{
+    width: 150px;
     position: absolute;
+    top: 38px;
+    left: 0;
     background-color: #eee;
     list-style: none;
     z-index: 200;
-    border: 2px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   }
 
   .dropdown-menu li a:hover{

@@ -209,24 +209,34 @@ header {
   .menu{
     display: flex;
     align-items: center;
-    position: relative;
     list-style: none;
   }
 
-  .menu > li{
+  [data-dropdown]{
+    position: relative;
     width: 170px;
     text-align: center;
     border: 1px solid black;
     margin-right: 5px;
+    background-color: red;
+  }
+  [data-dropdown] .dropdown-menu{
+    display: none;
+  }
+  [data-dropdown]:hover .dropdown-menu{
+    display: block;
   }
 
-  .dropdown{
-    width: 170px;
-    background-color: #eee;
-    display: block;
+  .dropdown-menu{
     position: absolute;
+    background-color: #eee;
     list-style: none;
-    
+    z-index: 200;
+    border: 2px solid #ccc;
+  }
+
+  .dropdown-menu li a:hover{
+    color: aqua;
   }
 }
 

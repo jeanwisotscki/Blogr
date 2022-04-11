@@ -105,9 +105,9 @@ img {
   color: var(--light-red);
 }
 .primary:hover {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
   color: var(--white);
-  border: 1px solid;
+  border: none;
 }
 
 .secondary {
@@ -179,6 +179,17 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 1.75rem;
+}
+
+.btn-login{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font1);
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-login:hover{
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Media queries

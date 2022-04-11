@@ -214,11 +214,37 @@ header {
 
   [data-dropdown]{
     position: relative;
-    width: 150px;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--font1);
+    font-weight: bold;
+    padding: 15px 20px;
     cursor: pointer;
     background-color: transparent;
   }
+
+  [data-dropdown]::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url('../images/icon-arrow-light.svg') no-repeat center center;
+    transition: .3s;
+    margin-left: 5px;
+  }
+  [data-dropdown]:hover::after{
+    content: '';
+    transform: rotate(180deg);
+    transition: .3s;
+  }
+
+
+  [data-dropdown]:hover{
+    color: #fff;
+    text-decoration: underline;
+  }
+
   [data-dropdown] .dropdown-menu{
     display: none;
   }
@@ -241,18 +267,26 @@ header {
   .dropdown-menu{
     width: 150px;
     position: absolute;
-    top: 38px;
+    top: 48px;
     left: 0;
     background-color: #eee;
     list-style: none;
     z-index: 200;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 4px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   }
 
+  .dropdown-menu li a{
+    color: var(--very-dark-blue);
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 8px 0;
+  }
+
   .dropdown-menu li a:hover{
-    color: aqua;
+    font-weight: bold;
   }
 }
 

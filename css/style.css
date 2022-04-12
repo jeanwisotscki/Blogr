@@ -281,7 +281,7 @@ header {
   [data-dropdown] .dropdown-menu{
     display: none;
   }
-  
+
   [data-dropdown]:hover .dropdown-menu{
     display: block;
     animation: show-up 0.3s ease;
@@ -330,6 +330,28 @@ header {
   margin-top: 60px;
   margin-bottom: 40px;
 }
+
+/* Media queries
+*******************/
+@media only screen and (min-width: 845px){
+  .group{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .img-container{
+    max-width: 50%;
+    border: 1px solid red;
+    background-image: url('../images/illustration-editor-desktop.svg');
+  }
+
+
+  .content{
+    max-width: 50%;
+    text-align: start;
+    border: 1px solid blue;
+  }
+}
+
 
 /* Section: State of the Art Infrastructure
 **********************************************/

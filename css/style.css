@@ -319,11 +319,11 @@ header {
 
 /* Section: Designed for the future
 **************************************/
-.__sect-1 {
+.global {
   text-align: center;
 }
 
-.__sect-1 > h1 {
+.global > h1 {
   color: var(--very-dark-blue);
   font-size: 1.5rem;
   font-weight: 600;
@@ -334,15 +334,22 @@ header {
 /* Media queries
 *******************/
 @media only screen and (min-width: 845px){
+  .__sect-1{
+    background-image: url('../images/illustration-editor-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 62vw center;
+    background-size: 50vw;
+  }
+
   .group{
     display: flex;
     flex-direction: row-reverse;
   }
-  .img-container{
-    max-width: 50%;
-    border: 1px solid red;
-    background-image: url('../images/illustration-editor-desktop.svg');
+
+  .img-container img{
+    display: none;
   }
+
 
 
   .content{

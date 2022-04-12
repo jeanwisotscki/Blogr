@@ -53,7 +53,9 @@ img {
 *********************/
 .container {
   width: 100%;
+  max-width: 980px;
   margin: 40px auto 0 auto;
+  border: 1px solid red;
 }
 
 .img-container {
@@ -118,6 +120,19 @@ img {
 .secondary:hover {
   background: var(--white);
   color: var(--light-red);
+}
+
+/* keyframes
+***************/
+@keyframes show-up{
+  from{
+    opacity: 0;
+    transform: translate3d(0,30px,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
 }
 
 /* Header
@@ -200,12 +215,20 @@ header {
     background: url("../images/bg-pattern-intro-desktop.svg") no-repeat 40% 50%,
     linear-gradient(140deg, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
   }
+
   .hero{
+    max-width: 980px;
+    margin: 0 auto;
     justify-content: start;
+
   }
+
   .__logo{
+    width: 11rem;
     margin-right: 2rem;
+    cursor: pointer;
   }
+
   .__menu-mobile{
     display: none;
   }
@@ -243,12 +266,12 @@ header {
     transition: .3s;
     margin-left: 5px;
   }
+
   [data-dropdown]:hover::after{
     content: '';
     transform: rotate(180deg);
     transition: .3s;
   }
-
 
   [data-dropdown]:hover{
     color: #fff;
@@ -258,20 +281,10 @@ header {
   [data-dropdown] .dropdown-menu{
     display: none;
   }
+  
   [data-dropdown]:hover .dropdown-menu{
     display: block;
     animation: show-up 0.3s ease;
-  }
-
-  @keyframes show-up{
-    from{
-      opacity: 0;
-      transform: translate3d(0,30px,0);
-    }
-    to{
-      opacity: 1;
-      transform: translate3d(0,0,0);
-    }
   }
 
   .dropdown-menu{
@@ -301,10 +314,6 @@ header {
 
   .header-content h1 {
     font-size: 3rem;
-  }
-  
-  .header-content p {
-    font-size: 1.5rem;
   }
 }
 

@@ -327,8 +327,8 @@ header {
   color: var(--very-dark-blue);
   font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* Media queries
@@ -337,8 +337,13 @@ header {
   .__sect-1{
     background-image: url('../images/illustration-editor-desktop.svg');
     background-repeat: no-repeat;
-    background-position: 62vw center;
-    background-size: 50vw;
+    background-position: 55vw 13vh;
+    background-size: 55vw;
+    padding: 40px 0;
+    border: 1px solid black;
+  }
+  .container{
+    margin: 0 auto;
   }
 
   .group{
@@ -350,12 +355,18 @@ header {
     display: none;
   }
 
-
-
   .content{
-    max-width: 50%;
+    max-width: 52%;
     text-align: start;
     border: 1px solid blue;
+  }
+
+  .text-wrapper{
+    max-width: 100%;
+  }
+
+  .br{
+    display: none;
   }
 }
 

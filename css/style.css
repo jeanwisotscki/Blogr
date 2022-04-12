@@ -55,7 +55,6 @@ img {
   width: 100%;
   max-width: 980px;
   margin: 40px auto 0 auto;
-  border: 1px solid red;
 }
 
 .img-container {
@@ -337,13 +336,18 @@ header {
   .__sect-1{
     background-image: url('../images/illustration-editor-desktop.svg');
     background-repeat: no-repeat;
-    background-position: 55vw 13vh;
+    background-position: 55vw 5vh;
     background-size: 55vw;
-    padding: 40px 0;
-    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 125px;
   }
+
   .container{
     margin: 0 auto;
+  }
+
+  .global > h1{
+    font-size: 2rem;
   }
 
   .group{
@@ -358,7 +362,6 @@ header {
   .content{
     max-width: 52%;
     text-align: start;
-    border: 1px solid blue;
   }
 
   .text-wrapper{

@@ -448,28 +448,30 @@ header {
   .main-div{
     display: flex;
     align-items: center;
+    position: relative;
+    border: 1px solid red;
+
   }
   
   .phones{
-    margin: 0 auto;
+    position: relative;
+    top: 45px;
     border: 1px solid rgb(0, 255, 76);
   }
   
   .circles{
-    position: absolute;
-    display: block;
-    width: 100%;
     top: 22%;
     bottom: 0;
     background-image: url('../images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
     background-size: 95vh;
     background-position: center -40vh;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
-    z-index: -1;
-    border: 1px solid black;
+    border: 1px solid greenyellow;
 
+  }
+
+  .text-wrapper h1, .text-wrapper p{
+    color: var(--white);
   }
 }
 

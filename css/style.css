@@ -133,6 +133,40 @@ img {
   }
 }
 
+/* Media Queries gerais
+**************************/
+@media only screen and (min-width: 845px){
+  .container{
+    margin: 0 auto;
+  }
+
+  .global > h1{
+    font-size: 2rem;
+  }
+
+  .group{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-container img{
+    display: none;
+  }
+
+  .content{
+    max-width: 52%;
+    text-align: start;
+  }
+
+  .text-wrapper{
+    max-width: 100%;
+  }
+
+  .br{
+    display: none;
+  }
+}
+
 /* Header
 *************************/
 header {
@@ -208,7 +242,6 @@ header {
 /* Media queries
 *******************/
 @media only screen and (min-width: 845px) {
-
   header {
     background: url("../images/bg-pattern-intro-desktop.svg") no-repeat 40% 50%,
     linear-gradient(140deg, hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 1));
@@ -317,13 +350,13 @@ header {
 
 /* Section: Designed for the future
 **************************************/
-.global {
+.main-div {
   text-align: center;
 }
 
-.global > h1 {
+.main-div > h1 {
   color: var(--very-dark-blue);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -339,36 +372,6 @@ header {
     background-size: 55vw;
     padding-top: 20px;
     padding-bottom: 125px;
-  }
-
-  .container{
-    margin: 0 auto;
-  }
-
-  .global > h1{
-    font-size: 2rem;
-  }
-
-  .group{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .img-container img{
-    display: none;
-  }
-
-  .content{
-    max-width: 52%;
-    text-align: start;
-  }
-
-  .text-wrapper{
-    max-width: 100%;
-  }
-
-  .br{
-    display: none;
   }
 }
 
@@ -433,6 +436,14 @@ header {
 .main-content p {
   color: var(--grayish-blue);
   line-height: 26px;
+}
+
+/* Media queries
+*******************/
+@media only screen and (min-width: 845px){
+  .__sect-2{
+    
+  }
 }
 
 /* Section: powerful

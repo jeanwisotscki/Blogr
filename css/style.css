@@ -375,7 +375,6 @@ header {
   }
 }
 
-
 /* Section: State of the Art Infrastructure
 **********************************************/
 .__sect-2 {
@@ -421,7 +420,7 @@ header {
   z-index: -1;
 }
 
-.main-content{
+/* .main-content{
   max-width: 80%;
   margin: 0 auto;
 }
@@ -436,13 +435,41 @@ header {
 .main-content p {
   color: var(--grayish-blue);
   line-height: 26px;
-}
+} */
 
 /* Media queries
 *******************/
 @media only screen and (min-width: 845px){
   .__sect-2{
-    
+    border: 1px solid red;
+    padding: 0;
+  }
+
+  .main-div{
+    display: flex;
+    align-items: center;
+  }
+  
+  .phones{
+    margin: 0 auto;
+    border: 1px solid rgb(0, 255, 76);
+  }
+  
+  .circles{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 22%;
+    bottom: 0;
+    background-image: url('../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: 95vh;
+    background-position: center -40vh;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    z-index: -1;
+    border: 1px solid black;
+
   }
 }
 

@@ -381,7 +381,6 @@ header {
   position: relative;
   color: var(--white);
   text-align: center;
-  padding-bottom: 80px;
   margin-bottom: 40px;
 }
 .__sect-2::before {
@@ -442,21 +441,22 @@ header {
 @media only screen and (min-width: 845px){
   .__sect-2{
     border: 1px solid red;
-    padding: 0;
+    padding: 10px 0;
   }
 
-  .main-div{
+  .__sect-2 .main-div{
     display: flex;
     align-items: center;
     position: relative;
-    border: 1px solid red;
 
   }
   
   .phones{
+    max-width: 45%;
     position: relative;
     top: 45px;
-    border: 1px solid rgb(0, 255, 76);
+    border: 1px solid red;
+
   }
   
   .circles{
@@ -466,12 +466,26 @@ header {
     background-repeat: no-repeat;
     background-size: 95vh;
     background-position: center -40vh;
-    border: 1px solid greenyellow;
-
+    border: 1px solid rgb(255, 47, 238);
   }
 
-  .text-wrapper h1, .text-wrapper p{
+  .__sect-2 .container{
+    border: 1px solid red;
+    
+  }
+
+  .__sect-2 .text-wrapper{
+    margin-top: 100px;
+    border: 1px solid rgb(255, 47, 238);
+
+  }
+  .__sect-2 .text-wrapper h1, 
+  .__sect-2 .text-wrapper p{
     color: var(--white);
+  }
+
+  .__sect-2 .text-wrapper p{
+    margin-bottom: 0;
   }
 }
 

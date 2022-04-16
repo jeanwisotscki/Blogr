@@ -1,6 +1,8 @@
-const hamburg = document.querySelector(".__menu-mobile");
-const nav = document.querySelector(".nav");
+import DropdownMenu from "./modules/dropdown-menu.js";
+import MenuMobile from "./modules/menu-mobile.js";
 
-hamburg.addEventListener("click", () => {
-  nav.style.display = "block";
-});
+const dropdownMenu = new DropdownMenu("[data-dropdown]");
+dropdownMenu.init();
+
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();

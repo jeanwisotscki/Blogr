@@ -137,6 +137,7 @@ img {
 **************************/
 @media only screen and (min-width: 845px){
   .container{
+    max-width: 980px;
     margin: 0 auto;
   }
 
@@ -401,6 +402,7 @@ header {
 }
 
 .phones{
+  max-width: 65%;
   margin: 0 auto;
 }
 
@@ -419,22 +421,15 @@ header {
   z-index: -1;
 }
 
-/* .main-content{
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.main-content h1 {
+.__sect-2 .text-wrapper h1{
   color: var(--white);
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
-.main-content p {
-  color: var(--grayish-blue);
-  line-height: 26px;
-} */
+.__sect-2 .text-wrapper p{
+  color: var(--white);
+  margin-bottom: 60px;
+}
 
 /* Media queries
 *******************/
@@ -467,13 +462,15 @@ header {
     background-position: -20vh -60vh;
   }
 
+  .content{
+    padding: 0 20px 0 0;
+  }
+
   .__sect-2 .text-wrapper h1{
-    color: var(--white);
     font-size: 2rem;
   }
 
   .__sect-2 .text-wrapper p{
-    color: var(--white);
     margin-bottom: 0;
   }
 }

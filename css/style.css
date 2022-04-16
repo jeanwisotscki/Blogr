@@ -440,7 +440,7 @@ header {
 *******************/
 @media only screen and (min-width: 845px){
   .__sect-2{
-    border: 1px solid red;
+    max-height: 66vh;
     padding: 10px 0;
   }
 
@@ -454,37 +454,26 @@ header {
   .phones{
     max-width: 45%;
     position: relative;
-    top: 45px;
-    border: 1px solid red;
+    top: 26px;
+    left: -40px
 
   }
   
   .circles{
     top: 22%;
     bottom: 0;
-    background-image: url('../images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    background-size: 95vh;
-    background-position: center -40vh;
-    border: 1px solid rgb(255, 47, 238);
+    background-size: 120vh;
+    background-position: -20vh -60vh;
   }
 
-  .__sect-2 .container{
-    border: 1px solid red;
-    
+  .__sect-2 .text-wrapper h1{
+    color: var(--white);
+    font-size: 2rem;
   }
 
-  .__sect-2 .text-wrapper{
-    margin-top: 100px;
-    border: 1px solid rgb(255, 47, 238);
-
-  }
-  .__sect-2 .text-wrapper h1, 
   .__sect-2 .text-wrapper p{
     color: var(--white);
-  }
-
-  .__sect-2 .text-wrapper p{
     margin-bottom: 0;
   }
 }
